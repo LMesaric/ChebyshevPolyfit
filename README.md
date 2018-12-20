@@ -6,6 +6,6 @@ Approximate the following functions with polynomials:
 - <pre>sin(x)/x, -1<=x<=1, deg=8</pre>
 - <pre>cos(x),   -1<=x<=1, deg=8</pre>
 
-![ChebyshevWithoutSpecCorrectionBig.png](ChebyshevWithoutSpecCorrectionBig.png)
-![ChebyshevWithSpecCorrectionBig.png](ChebyshevWithSpecCorrectionBig.png)
-![ChebyshevIntegralBig.png](ChebyshevIntegralBig.png)
+![ChebyshevWithoutSpecCorrection.png](ChebyshevWithoutSpecCorrection.png)
+![ChebyshevWithSpecCorrection.png](ChebyshevWithSpecCorrection.png)
+![ChebyshevIntegral.png](ChebyshevIntegral.png)
