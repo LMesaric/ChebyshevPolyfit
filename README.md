@@ -46,6 +46,6 @@ Approximate functions by polynomials:
 +0.999999999472876
 ```
 
-![ChebyshevWithoutSpecCorrection.png](ChebyshevWithoutSpecCorrection.png)
-![ChebyshevWithSpecCorrection.png](ChebyshevWithSpecCorrection.png)
-![ChebyshevIntegral.png](ChebyshevIntegral.png)
+![ChebyshevWithoutSpecCorrection.png](images/ChebyshevWithoutSpecCorrection.png)
+![ChebyshevWithSpecCorrection.png](images/ChebyshevWithSpecCorrection.png)
+![ChebyshevIntegral.png](images/ChebyshevIntegral.png)
