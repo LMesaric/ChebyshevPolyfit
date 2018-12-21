@@ -11,29 +11,25 @@ f(2) = log(1+x);
 f(3) = sin(x)/x;
 f(4) = cos(x);
 
-% g(1) = 0.00181258334235528*x^6 + 0.0080200206419458*x^5 + 0.0419670793931914*x^4 + 0.166391821690428*x^3 + 0.500099940056635*x^2 + 0.999987610323461*x + 1.00000138583625;
-% g(2) = - 0.0312013789893733*x^6 + 0.101964634786825*x^5 - 0.187255939165997*x^4 + 0.30301542826567*x^3 - 0.492957605179448*x^2 + 0.999422879211686*x + 0.0000811859400770467;
-% g(3) = 0.00000269375975765659*x^8 - 0.000198358664086584*x^6 + 0.00833331406945632*x^4 - 0.166666664261236*x^2 + 0.999999999951925;
-% g(4) = 0.0000241212010831705*x^8 - 0.00138829603431855*x^6 + 0.0416664553753419*x^4 - 0.499999973621718*x^2 + 0.999999999472876;
-% 
-% err = [0.000002, 0.0001, 0.0000000001, 0.000000001] ;
-
+% Expand Taylor series around hand-picked point.
 [g(1), err(1)] = ChebyshevPolyfit(f(1), 6,  0, 1, 0.3762);
 [g(2), err(2)] = ChebyshevPolyfit(f(2), 6,  0, 1, 0.1113);
 [g(3), err(3)] = ChebyshevPolyfit(f(3), 8, -1, 1, 0);
 [g(4), err(4)] = ChebyshevPolyfit(f(4), 8, -1, 1, 0);
 
+% Expand Taylor series around the central point.
 % [g(1), err(1)] = ChebyshevPolyfit(f(1), 6,  0, 1, 0);
 % [g(2), err(2)] = ChebyshevPolyfit(f(2), 6,  0, 1, 0);
 % [g(3), err(3)] = ChebyshevPolyfit(f(3), 8, -1, 1, 0);
 % [g(4), err(4)] = ChebyshevPolyfit(f(4), 8, -1, 1, 0);
 
-% [g(1), err(1)] = ChebyshevPolyfitIntegral(f(1), 6,  0, 1, 10);
-% [g(2), err(2)] = ChebyshevPolyfitIntegral(f(2), 6,  0, 1, 10);
-% [g(3), err(3)] = ChebyshevPolyfitIntegral(f(3), 8, -1, 1, 10);
-% [g(4), err(4)] = ChebyshevPolyfitIntegral(f(4), 8, -1, 1, 10);
+% Calculate using integrals.
+% [g(1), err(1)] = ChebyshevPolyfitIntegral(f(1), 6,  0, 1, 15);
+% [g(2), err(2)] = ChebyshevPolyfitIntegral(f(2), 6,  0, 1, 15);
+% [g(3), err(3)] = ChebyshevPolyfitIntegral(f(3), 8, -1, 1, 15);
+% [g(4), err(4)] = ChebyshevPolyfitIntegral(f(4), 8, -1, 1, 15);
 
-digits(15);
+digits(25);
 g = vpa(g);
 err = double(err);
 disp(g);
