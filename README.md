@@ -17,6 +17,8 @@ Hand-picked `C=0.8762` for <code>f<sub>1</sub>(x)</code> and `C=0.6113` for <cod
 Below are approximations for hand-picked values of `C`.
 <br><br>
 
+## Approximation results ##
+
 ### <code>f<sub>1</sub>(x) = e<sup>x</sup></code> ###
 Coefficients for `exp(x)` on the interval `[0, 1]` with `C=0.8762`:
 
@@ -87,3 +89,6 @@ Maximum error on that interval: `5.271243440664400e-10`
 
 #### Approximations using integrals, similar to `C=0`: ####
 ![ChebyshevIntegral.png](images/ChebyshevIntegral.png)
+
+## Related Projects 
+- [Chebyshev](https://github.com/mlazaric/Chebyshev) by [@mlazaric](https://github.com/mlazaric).
