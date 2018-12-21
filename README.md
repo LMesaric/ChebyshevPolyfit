@@ -15,7 +15,7 @@ Finding optimal `C` is the most interesting part. Taking `C=0` will give the Mac
 Hand-picked `C=0.8762` for <code>f<sub>1</sub>(x)</code> and `C=0.6113` for <code>f<sub>2</sub>(x)</code> gave the best results in terms of _maximum error_, but after seeing the error function (first image) it is obvious that using `C=(a+b)/2=0.5` (second image) gives results which are more consistent. Since the small improvement did not increase the number of correct decimal digits, generally speaking, taking `C=0.5` might be a better solution.
 
 Below are approximations for hand-picked values of `C`.
-
+<br><br>
 
 ### <code>f<sub>1</sub>(x) = e<sup>x</sup></code> ###
 Coefficients for `exp(x)` on the interval `[0, 1]` with `C=0.8762`:
@@ -31,7 +31,7 @@ Coefficients for `exp(x)` on the interval `[0, 1]` with `C=0.8762`:
 | `+1.00000138583625075` | `1`                        |
 
 Maximum error on that interval: `1.387174778327080e-06`
-
+<br><br>
 
 ### <code>f<sub>2</sub>(x) = ln(1+x)</code> ###
 Coefficients for `ln(1+x)` on the interval `[0, 1]` with `C=0.6113`:
@@ -47,7 +47,7 @@ Coefficients for `ln(1+x)` on the interval `[0, 1]` with `C=0.6113`:
 | `+0.00008118594007705` | `1`                        |
 
 Maximum error on that interval: `8.121660103074230e-05`
-
+<br><br>
 
 ### <code>f<sub>3</sub>(x) = sin(x)/x</code> ###
 Coefficients for `sin(x)/x` on the interval `[-1, 1]` with `C=0`:
@@ -61,7 +61,7 @@ Coefficients for `sin(x)/x` on the interval `[-1, 1]` with `C=0`:
 | `+0.99999999995192540` | `1`                        |
 
 Maximum error on that interval: `4.805667042378870e-11`
-
+<br><br>
 
 ### <code>f<sub>4</sub>(x) = cos(x)</code> ###
 Coefficients for `cos(x)` on the interval `[-1, 1]` with `C=0`:
@@ -75,6 +75,7 @@ Coefficients for `cos(x)` on the interval `[-1, 1]` with `C=0`:
 | `+0.99999999947287566` | `1`                        |
 
 Maximum error on that interval: `5.271243440664400e-10`
+<br><br>
 
 ## Errors in approximations ##
 
